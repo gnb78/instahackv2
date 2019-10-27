@@ -33,7 +33,7 @@ echo "\033[1;32m\n\n[+]=>DIGITE OU COLE O NOME DA VÍTIMA exe:(pedro1234)"
 #
 read -p "[+]=>" vitima
 echo
-echo "\033[1;32m\n\n[+]=>DIGITE OU COLE O CAMINHO DA SUA LISTA DE SENHA"
+echo "\033[1;32m\n\n[+]=>DIGITE OU COLE O CAMINHO DA SUA LISTA DE SENHA (ex: /sdcard/Wordlist/senhas.txt)"
 #
 read -p "[+]=>" wordlist
 #
